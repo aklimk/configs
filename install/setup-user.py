@@ -14,4 +14,4 @@ choice = input("~~~~ Install sudo? (y/n) ")
 if choice == "y":
     os.system("echo y | pacman -S sudo")
     os.system("EDITOR=vim visudo")
-    os.system("exit")
+    print("Please exit and switch to new user account.")
