@@ -13,7 +13,7 @@ for file_path in os.listdir("./packages"):
                 print("~~~Line parts: ", parts)
             choice = ""
             while not (choice == "y" or choice == "n"):
-                input("~~~Install: " + parts[0] + "? (y/n) ")
+                choice = input("~~~Install: " + parts[0] + "? (y/n) ")
             if choice == "n":
                 continue
             os.system("y | sudo pacman -S " + parts[0])
