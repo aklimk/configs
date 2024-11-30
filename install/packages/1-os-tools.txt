@@ -1,2 +1,0 @@
-vim
-sudo : sudo EDITOR=vim visudo && su - && python install.py
