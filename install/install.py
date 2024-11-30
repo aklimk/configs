@@ -16,6 +16,6 @@ for file_path in sorted(os.listdir("./packages")):
                 choice = input("~~~Install: " + parts[0] + "? (y/n) ")
             if choice == "n":
                 continue
-            os.system("y | sudo pacman -S " + parts[0])
+            os.system("echo y | sudo pacman -S " + parts[0])
             if len(parts) > 1:
                 os.system(parts[1])
