@@ -1,7 +1,7 @@
 import os
 import sys
 
-for file_path in os.listdir("./packages"):
+for file_path in sorted(os.listdir("./packages")):
     if len(sys.argv) > 1 and sys.argv[1] == "--debug":
         print("~~~Loaded file: ", file_path)
     with open("./packages/" + file_path) as file:
