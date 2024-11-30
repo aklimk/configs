@@ -1,0 +1,2 @@
+vim
+sudo : sudo EDITOR=vim visudo && su -

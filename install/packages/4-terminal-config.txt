@@ -1,0 +1,4 @@
+wget 
+zsh : sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
+wezterm
+ttf-nerd-fonts-symbols-mono
